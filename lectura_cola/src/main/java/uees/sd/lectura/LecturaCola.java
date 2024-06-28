@@ -20,6 +20,9 @@ public class LecturaCola {
         String UrlServidorActiveMq="tcp://localhost:61616";
         String Queue="colasd";
         
+        System.out.println("Servidor ACTIVE MQ: "+UrlServidorActiveMq);
+        System.out.println("Queue: "+Queue);
+        
         try {
             Cola.Suscriptor(UrlServidorActiveMq, Queue, new MessageListener() {
             @Override
