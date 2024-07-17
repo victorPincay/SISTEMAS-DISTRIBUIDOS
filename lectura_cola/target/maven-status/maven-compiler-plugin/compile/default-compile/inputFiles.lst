@@ -1,1 +1,7 @@
-/Users/ninoska/NetBeansProjects/lectura_cola/src/main/java/uees/sd/lectura/LecturaCola.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/CensusForm.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/config/ConfigReader.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/storage/JsonFileWriter.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/LecturaCola.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/util/HashUtil.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/Validador.java
+/Users/ninoska/PROYECTOS SISTEMAS DISTRIBUIDOS/SISTEMAS-DISTRIBUIDOS/lectura_cola/src/main/java/uees/sd/lectura/infra/RestApiClient.java

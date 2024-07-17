@@ -1,2 +1,8 @@
+uees/sd/lectura/infra/RestApiClient.class
+uees/sd/lectura/util/HashUtil.class
 uees/sd/lectura/LecturaCola.class
+uees/sd/lectura/config/ConfigReader.class
+uees/sd/lectura/Validador.class
 uees/sd/lectura/LecturaCola$1.class
+uees/sd/lectura/storage/JsonFileWriter.class
+uees/sd/lectura/CensusForm.class
