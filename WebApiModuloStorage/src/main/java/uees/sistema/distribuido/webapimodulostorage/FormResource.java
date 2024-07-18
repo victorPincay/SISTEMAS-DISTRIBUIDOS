@@ -45,7 +45,8 @@ public class FormResource {
             String id = HashUtil.sha256(form);
             forms.put(id, form);
             fileStorage.saveForms(forms);
-            replicatelocal("create", id, form);
+            Thread thread = new Thread(() -> replicatelocal("create", id, form));
+            thread.start();
             return Response.status(Response.Status.CREATED).entity(id).build();
         } catch (Exception e) {
             e.printStackTrace();
@@ -60,7 +61,8 @@ public class FormResource {
         if (forms.containsKey(id)) {
             forms.remove(id);
             fileStorage.saveForms(forms);
-            replicatelocal("delete", id, null);
+            Thread thread = new Thread(() -> replicatelocal("delete", id, null));
+            thread.start();
             return Response.noContent().build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();
@@ -74,7 +76,8 @@ public class FormResource {
         if (forms.containsKey(id)) {
             forms.put(id, form);
             fileStorage.saveForms(forms);
-            replicatelocal("update", id, form);
+            Thread thread = new Thread(() -> replicatelocal("update", id, form));
+            thread.start();
             return Response.noContent().build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();

@@ -17,6 +17,7 @@ import uees.sistema.distribuido.config.ConfigReader;
 
 public class LeaderElectionService {
 
+    public static String LEADER;
     private static LeaderElectionService instance;
     private ConfigReader configReader;
 
@@ -35,6 +36,8 @@ public class LeaderElectionService {
         List<String> replicaArray = configReader.getReplicaAddresses();
         for (String replica : replicaArray) {
             if (checkHealth(replica)) {
+                LEADER=replica;
+                System.out.println("Lider elegido => ["+replica+"]");
                 configReader.setProperty("leader", replica);
                 break;
             }

@@ -17,6 +17,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import uees.sistema.distribuido.config.ConfigReader;
+import uees.sistema.distribuido.service.LeaderElectionService;
 
 @Path("/form")
 public class GatewayResource {
@@ -79,7 +80,7 @@ public class GatewayResource {
 
     private Response forwardRequest(String path, String method, String entity) {
         Client client = ClientBuilder.newClient();
-        String leaderUri = configReader.getLeader();
+        String leaderUri = LeaderElectionService.LEADER;
         try {
             Response response;
             switch (method) {

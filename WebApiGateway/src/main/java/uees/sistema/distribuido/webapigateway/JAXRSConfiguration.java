@@ -11,7 +11,7 @@ public class JAXRSConfiguration extends Application {
 
     public JAXRSConfiguration(){
         Timer timer = new Timer(true);
-        timer.scheduleAtFixedRate(new LeaderElectionTask(), 0, 60000); // Ejecuta cada 5 segundos
+        timer.scheduleAtFixedRate(new LeaderElectionTask(), 0, 5000); // Ejecuta cada 5 segundos
     }
     
 }
